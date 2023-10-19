@@ -42,6 +42,13 @@ img {
   padding-inline: 10px;
 }
 
+.container-fluid {
+  max-width: calc(100vw - ((100vw - 1284px) / 2));
+  background: purple;
+  margin-left: auto;
+  padding-inline: 10px;
+}
+
 .button {
   background: #CD313E;
   border: none;
@@ -65,7 +72,7 @@ img {
   padding: 0.25rem 0.75rem;
 }
 
-.header {
+/* .header {
     display: flex;
     justify-content: space-around;
 }
@@ -79,7 +86,7 @@ ul {
     line-height: 24px;
 }
 
-/* button {
+button {
     width: 189.131px;
     height: 36px;
     flex-shrink: 0;
@@ -87,7 +94,7 @@ ul {
     color: #fff;
 } */
 
-.content {
+/* .content {
     padding-top: 240px;
     padding-bottom: 440px;
     margin-bottom: 100px;
@@ -111,12 +118,11 @@ ul {
     line-height: 30px;
 }
 
-.footer {
-    background-color: #F78282;
-    padding-top: 68px;
-}
-
 .footer .container {
     display: flex;
     justify-content: space-between;
+} */
+
+.footer {
+  background-color: #F78282;
 }
