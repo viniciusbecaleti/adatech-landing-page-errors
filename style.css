@@ -1,10 +1,10 @@
 /* Reset */
 :root {
-  --primary: #EB423F;
+  --primary: #eb423f;
   --secondary: #091133;
-  --body-background: #FFFFFF;
+  --body-background: #ffffff;
 }
-html{
+html {
   font-size: 6.25%;
 }
 * {
@@ -13,7 +13,11 @@ html{
   box-sizing: border-box;
 }
 
-body, input, select, textarea, button {
+body,
+input,
+select,
+textarea,
+button {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16rem; /*16 px (padrão do navegador)*/
@@ -51,7 +55,7 @@ button {
 }
 
 .container-fluid {
-  width: calc(100vw - ((100vw - 1284rem) / 2));
+  width: calc(100vw - ((100vw - 1353rem) / 2));
   margin-left: auto;
   padding-inline: 10rem;
 }
@@ -78,6 +82,7 @@ button {
   font-size: 12rem;
   padding: 4rem 12rem;
 }
+
 /*header*/
 .header {
   position: absolute;
@@ -98,33 +103,41 @@ button {
   align-items: center;
 }
 
-.header nav ul{
+.header nav ul {
   display: flex;
   gap: 60rem;
 }
 
-.header .container button{
+.header .container button.buynow {
   min-width: 160rem;
   width: fit-content;
   justify-self: end;
+}
+
+.header button[data-menu="open"] {
+  display: none;
+  width: fit-content;
+  border: none;
+  background: none;
 }
 
 .header .logo {
   display: flex;
   justify-content: center;
 }
-/*content*/
+
+
+/* Content */
 .content {
   position: relative;
 
   height: 100vh;
-  min-height: 1196rem;
 
   display: flex;
   align-items: center;
 }
 
-.background {
+.content .background {
   position: absolute;
   inset: 0;
   z-index: -100;
@@ -133,44 +146,54 @@ button {
   justify-content: end;
 }
 
-.background img {
+.content .background img {
   object-fit: cover;
-  object-position: left;
+  object-position: right;
 }
 
-.introduction {
+.content .background img.mobile {
+  display: none;
+}
+
+.content .introduction {
   max-width: 550rem;
   display: flex;
   flex-direction: column;
   gap: 20rem;
 }
-.introduction h1{
-  color:var(--secondary);
-  font-size: 50rem;
+
+.content .introduction h1 {
+  color: var(--secondary);
+  font-size: clamp(24rem, 8vw, 50rem);
   font-weight: 500;
-  line-height:1.32;
+  line-height: 1.32;
   letter-spacing: 1px;
 }
-.introduction p {
+
+.content .introduction p {
   font-size: 18rem;
   line-height: 1.6;
 }
 
-.introduction p + p{
+.content .introduction p + p {
   margin-top: 32rem;
 }
-.introduction .action{
+
+.content .introduction .action {
   display: flex;
-  gap: 32rem;
+  flex-wrap: wrap;
+  gap: 16rem 32rem;
 }
-.introduction .action .button{
+
+.content .introduction .button {
   width: 100%;
   max-width: 190rem;
 }
+
 /* Footer */
 .footer {
   color: white;
-  background-color: #F78282;
+  background-color: #f78282;
   padding-block: 64rem 32rem;
   margin-top: 100rem;
 }
@@ -216,7 +239,47 @@ button {
   height: 16rem;
 }
 
+/* Resonsivos */
+@media (max-width: 1080px) {
+  .content .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .content .background img.desktop {
+    display: none;
+  }
+
+  .content .background img.mobile {
+    display: block;
+  }
+
+  .content .action {
+    justify-content: center;
+  }
+}
+
 @media (max-width: 768px) {
+  .header .container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .header nav,
+  .header button:not([data-menu="open"]) {
+    display: none;
+  }
+
+  .header .logo {
+    justify-content: initial;
+}
+
+  .header button[data-menu="open"] {
+    display: block;
+    justify-self: end;
+  }
+
   .footer-top,
   .footer-bottom {
     flex-direction: column;
@@ -228,6 +291,20 @@ button {
   }
 }
 
+@media (max-width: 480px) {
+  .content .introduction p {
+    font-size: 16rem;
+    line-height: 1.4;
+  }
+
+  .content .introduction p + p {
+    margin-top: 16rem;
+  }
+
+  .content .introduction .button {
+    max-width: none;
+  }
+}
 
 /* .header {
     display: flex;
@@ -279,6 +356,3 @@ button {
     display: flex;
     justify-content: space-between;
 } */
-
-
-
