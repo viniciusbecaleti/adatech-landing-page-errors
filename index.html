@@ -1,92 +1,111 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <meta
+      name="description"
+      content="This is an example of a landing page that was a challenge"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<style>
-    .header {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    ul {
-        color: #CD313E;
-        font-family: Roboto;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 24px;
-    }
-
-    button {
-        width: 189.131px;
-        height: 36px;
-        flex-shrink: 0;
-        background-color: #CD313E;
-        color: #fff;
-    }
-</style>
-<body>
-    <div class="header">
-        <ul>
-            Home
-            Abut
-            Contact
-        </ul>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav>
+          <ul>
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#abut">Abut</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
 
         <img src="/assets/logo.png" />
 
         <button>Buy now</button>
-    </div>
+      </div>
+    </header>
 
-    <div class="content">
+    <main class="content">
+      <div class="container-fluid">
+        <h2>Introduce Your Product Quickly & Effectively</h2>
+        <span>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
+          et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
+          felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+          consequat massa quis enim.
+        </span>
+        <button type="button">Purchase UI Kit</button>
+        <a href="#">Learn More</a>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div>
+          <span>©2023 Yourcompany</span>
+          <button type="button">Purchase now</button>
+        </div>
 
         <div>
-            <h2>
-                Introduce Your Product Quickly & Effectively
-            </h2>
-    
-            <span>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus 
-mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-            </span>
+          <ul>
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
 
-            <br />
-            <br />
-    
-            <button>
-                Purchase UI Kit
-            </button>
-    
-            <a href="#">Learn More</a>
+          <ul>
+            <li>
+              <a href="https://facebook.com" target="_blank">
+                <img src="/assets/social/facebook.svg" alt="" />
+              </a>
+            </li>
+
+            <li>
+              <a href="https://linkedin.com" target="_blank">
+                <img src="/assets/social/linkedin.svg" alt="" />
+              </a>
+            </li>
+
+            <li>
+              <a href="https://twitter.com" target="_blank">
+                <img src="/assets/social/twitter.svg" alt="" />
+              </a>
+            </li>
+
+            <li>
+              <a href="https://youtube.com" target="_blank">
+                <img src="/assets/social/youtube.svg" alt="" />
+              </a>
+            </li>
+
+            <li>
+              <a href="https://instagram.com" target="_blank">
+                <img src="/assets/social/instagram.svg" alt="" />
+              </a>
+            </li>
+          </ul>
         </div>
-    </div>
-
-    <div style="background-color: #F78282; padding-top: 68px;">
-        <div style="display: flex; justify-content: space-between;">
-            <span style="color: white;">
-                ©2023 {Yourcompany}
-            </span>
-
-            <button>Purchase now</button>
-        </div>
-
-
-        <div>
-            <ul style="display: flex; gap: 30px;">
-                <span>Home</span>
-                Abut
-                <span>Contact</span>
-            </ul>
-
-            <ul>
-                <img src="/assets/social.png" alt="Social">
-            </ul>
-        </div>
-    </div>
-</body>
+      </div>
+    </footer>
+  </body>
 </html>
