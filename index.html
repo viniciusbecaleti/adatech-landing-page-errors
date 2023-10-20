@@ -1,131 +1,146 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Landing Page</title>
+    <meta
+      name="description"
+      content="This is an example of a landing page that was a challenge"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <title>Landing Page</title>
-  <meta name="description" content="This is an example of a landing page that was a challenge" />
-  <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav>
+          <ul>
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
 
-<body>
-  <header class="header">
-    <div class="container">
-      <nav>
-        <ul>
-          <li>
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
-
-      <div class="logo">
-        <img src="/assets/logo.png" />
-      </div>
-
-      <button type="button" class="buynow button button--small">Buy Now</button>
-
-      <button type="button" data-menu="open">
-        <img src="/assets/hamburger.svg" alt="" />
-      </button>
-    </div>
-  </header>
-
-  <main class="content">
-    <div class="background">
-      <img class="desktop" src="/assets/background.png" alt="">
-      <img class="mobile" src="/assets/background-mobile.png" alt="">
-    </div>
-
-    <div class="container-fluid">
-      <div class="introduction">
-        <h1>Introduce Your Product Quickly & Effectively</h1>
-
-        <div>
-          <p>
-            Descubra a elegância suprema deste sofá contemporâneo. Seu design sofisticado e conforto inigualável
-            tornam-no uma adição essencial para sua casa. Escolha a excelência, escolha nosso sofá.
-          </p>
-          <p>
-            Seu revestimento em veludo macio proporciona uma sensação acolhedora, enquanto o apoio lombar ajustável
-            garante relaxamento perfeito. Uma escolha inigualável.
-          </p>
+        <div class="logo">
+          <img src="/assets/logo.png" />
         </div>
 
-        <div class="action">
-          <button type="button" class="button">Purchase UI Kit</button>
-          <a class="button button--secondary" href="#">Learn More</a>
+        <button type="button" class="buynow button button--small">
+          Buy Now
+        </button>
+
+        <button type="button" data-menu="open">
+          <img src="/assets/hamburger.svg" alt="" />
+        </button>
+      </div>
+    </header>
+
+    <main class="content">
+      <div class="background">
+        <img class="desktop" src="/assets/background.png" alt="" />
+        <img class="mobile" src="/assets/background-mobile.png" alt="" />
+      </div>
+
+      <div class="container-fluid">
+        <div class="introduction">
+          <h1>Introduce Your Product Quickly & Effectively</h1>
+
+          <div>
+            <p>
+              Descubra a elegância suprema deste sofá contemporâneo. Seu design
+              sofisticado e conforto inigualável tornam-no uma adição essencial
+              para sua casa. Escolha a excelência, escolha nosso sofá.
+            </p>
+            <p>
+              Seu revestimento em veludo macio proporciona uma sensação
+              acolhedora, enquanto o apoio lombar ajustável garante relaxamento
+              perfeito. Uma escolha inigualável.
+            </p>
+          </div>
+
+          <div class="action">
+            <button type="button" class="button">Purchase UI Kit</button>
+            <a class="button button--secondary" href="#">Learn More</a>
+          </div>
         </div>
       </div>
-    </div>
-  </main>
+    </main>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-top">
-        <span>©2023 Yourcompany</span>
-        <button type="button" class="button button--small">Purchase Now</button>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <span>©2023 Yourcompany</span>
+          <button type="button" class="button button--small">
+            Purchase Now
+          </button>
+        </div>
+
+        <hr />
+
+        <div class="footer-bottom">
+          <ul class="footer-nav">
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+
+          <ul class="social-icons">
+            <li>
+              <a href="https://facebook.com" target="_blank">
+                <img src="/assets/social/facebook.svg" alt="" />
+              </a>
+            </li>
+
+            <li>
+              <a href="https://linkedin.com" target="_blank">
+                <img src="/assets/social/linkedin.svg" alt="" />
+              </a>
+            </li>
+
+            <li>
+              <a href="https://twitter.com" target="_blank">
+                <img src="/assets/social/twitter.svg" alt="" />
+              </a>
+            </li>
+
+            <li>
+              <a href="https://youtube.com" target="_blank">
+                <img src="/assets/social/youtube.svg" alt="" />
+              </a>
+            </li>
+
+            <li>
+              <a href="https://instagram.com" target="_blank">
+                <img src="/assets/social/instagram.svg" alt="" />
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-
-      <hr />
-
-      <div class="footer-bottom">
-        <ul class="footer-nav">
-          <li>
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-
-        <ul class="social-icons">
-          <li>
-            <a href="https://facebook.com" target="_blank">
-              <img src="/assets/social/facebook.svg" alt="" />
-            </a>
-          </li>
-
-          <li>
-            <a href="https://linkedin.com" target="_blank">
-              <img src="/assets/social/linkedin.svg" alt="" />
-            </a>
-          </li>
-
-          <li>
-            <a href="https://twitter.com" target="_blank">
-              <img src="/assets/social/twitter.svg" alt="" />
-            </a>
-          </li>
-
-          <li>
-            <a href="https://youtube.com" target="_blank">
-              <img src="/assets/social/youtube.svg" alt="" />
-            </a>
-          </li>
-
-          <li>
-            <a href="https://instagram.com" target="_blank">
-              <img src="/assets/social/instagram.svg" alt="" />
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
